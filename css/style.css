@@ -1,0 +1,195 @@
+/* fonts files */
+.title-base {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+.text-base {
+  font-family: 'Hind', sans-serif;
+  font-weight: 400;
+}
+/*colors*/
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Hind', sans-serif;
+  font-weight: 400;
+  line-height: 26px;
+  box-sizing: border-box;
+  font-size: 14px;
+  color: #737373;
+}
+ul {
+  list-style: none;
+}
+input:focus,
+select:focus,
+button:focus {
+  outline: none;
+}
+.logo {
+  display: block;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 40px;
+  color: #fff;
+}
+.logo--light {
+  font-weight: 400;
+}
+.logo--extra-light {
+  font-weight: 200;
+}
+.main-nav {
+  display: flex;
+  justify-content: flex-end;
+}
+.main-nav__item {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0 10px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  line-height: 40px;
+  color: #fff;
+}
+.btn {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 10px 15px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  color: #fff;
+  border-radius: 5px;
+  background: #00a1eb;
+}
+.header {
+  background: #00a1eb url("../img/main-bg.jpg") no-repeat center center;
+  background-size: cover;
+  min-height: 600px;
+  padding-top: 40px;
+  color: #fff;
+  text-align: center;
+}
+.header__title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 79px;
+  text-transform: uppercase;
+}
+.header__description {
+  font-size: 22px;
+  font-weight: 600;
+}
+.about {
+  padding: 90px 0;
+}
+.about__title {
+  position: relative;
+  margin-bottom: 50px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 34px;
+  color: #00a1eb;
+}
+.about__title:after {
+  position: absolute;
+  content: '';
+  bottom: -25px;
+  display: block;
+  width: 85px;
+  height: 1px;
+  background: #737373;
+}
+.about__phone {
+  margin-bottom: 25px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  color: #00a1eb;
+}
+.about__btn {
+  line-height: 18px;
+}
+.about__sklep {
+  position: relative;
+  text-align: right;
+}
+.sklep__img {
+  width: 100%;
+  max-width: 600px;
+}
+.sklep__title {
+  position: absolute;
+  bottom: 20px;
+  right: 35px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  color: #fff;
+}
+.cooperation {
+  padding: 90px 0;
+  text-align: center;
+}
+.cooperation__item {
+  margin-bottom: 50px;
+  text-align: center;
+}
+.cooperation__img {
+  width: 180px;
+  height: 180px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  border-radius: 50%;
+}
+.cooperation__img--catering {
+  background: #00a1eb url("../img/icons/pan-icon.svg") no-repeat center center;
+  background-size: 86px 86px;
+}
+.cooperation__img--fish {
+  background: #00a1eb url("../img/icons/fish-icon.svg") no-repeat center center;
+  background-size: 86px 86px;
+}
+.cooperation__img--shrimp {
+  background: #00a1eb url("../img/icons/shrimp-icon.svg") no-repeat center center;
+  background-size: 86px 86px;
+}
+.cooperation__img:hover {
+  border: 3px solid #00a1eb;
+}
+.cooperation__img--catering:hover {
+  background: transparent url("../img/icons/pan-icon-hover.svg") no-repeat center center;
+  background-size: 86px 86px;
+}
+.cooperation__img--fish:hover {
+  background: transparent url("../img/icons/fish-icon-hover.svg") no-repeat center center;
+  background-size: 86px 86px;
+}
+.cooperation__img--shrimp:hover {
+  background: transparent url("../img/icons/shrimp-icon-hover.svg") no-repeat center center;
+  background-size: 86px 86px;
+}
+.cooperation__title {
+  position: relative;
+  margin-bottom: 40px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  color: #00a1eb;
+  text-transform: uppercase;
+}
+.cooperation__title:after {
+  position: absolute;
+  content: '';
+  bottom: -20px;
+  left: 50%;
+  margin-left: -40px;
+  display: block;
+  width: 80px;
+  height: 1px;
+  background: #737373;
+}
+.cooperation__btn {
+  line-height: 18px;
+}

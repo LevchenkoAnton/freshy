@@ -1,0 +1,54 @@
+.about {
+  padding: 90px 0;
+
+  &__title {
+    position: relative;
+    margin-bottom: 50px;
+    .title-base;
+    font-size: 34px;
+    color: @title-color;
+  }
+
+  &__title:after {
+    position: absolute;
+    content: '';
+    bottom: -25px;
+    display: block;
+    width: 85px;
+    height: 1px;
+    background: @text-base-color;
+  }
+
+  &__phone {
+    margin-bottom: 25px;
+    .title-base;
+    font-size: 22px;
+    color: @title-color;
+  }
+
+  &__btn {
+    line-height: 18px;
+  }
+
+  &__sklep {
+    position: relative;
+    text-align: right;
+  }
+}
+
+.sklep {
+
+  &__img {
+    width: 100%;
+    max-width: 600px;
+  }
+
+  &__title {
+    position: absolute;
+    bottom: 20px;
+    right: 35px;
+    .title-base;
+    font-size: 22px;
+    color: @link-color;
+  }
+}

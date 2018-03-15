@@ -1,0 +1,76 @@
+.cooperation {
+  padding: 90px 0;
+  text-align: center;
+
+  &__item {
+    margin-bottom: 50px;
+    text-align: center;
+  }
+
+  &__img {
+    width: 180px;
+    height: 180px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    border-radius: 50%;
+  }
+
+  &__img--catering {
+    background: @bg-base url("../img/icons/pan-icon.svg") no-repeat center center;
+    background-size: 86px 86px;
+  }
+
+  &__img--fish {
+    background: @bg-base url("../img/icons/fish-icon.svg") no-repeat center center;
+    background-size: 86px 86px;
+  }
+
+  &__img--shrimp {
+    background: @bg-base url("../img/icons/shrimp-icon.svg") no-repeat center center;
+    background-size: 86px 86px;
+  }
+
+  &__img:hover {
+    border: 3px solid @bg-base;
+  }
+
+  &__img--catering:hover {
+    background: transparent url("../img/icons/pan-icon-hover.svg") no-repeat center center;
+    background-size: 86px 86px;
+  }
+
+  &__img--fish:hover {
+    background: transparent url("../img/icons/fish-icon-hover.svg") no-repeat center center;
+    background-size: 86px 86px;
+  }
+
+  &__img--shrimp:hover {
+    background: transparent url("../img/icons/shrimp-icon-hover.svg") no-repeat center center;
+    background-size: 86px 86px;
+  }
+
+  &__title {
+    position: relative;
+    margin-bottom: 40px;
+    .title-base;
+    font-size: 24px;
+    color: @title-color;
+    text-transform: uppercase;
+  }
+
+  &__title:after {
+    position: absolute;
+    content: '';
+    bottom: -20px;
+    left: 50%;
+    margin-left: -40px;
+    display: block;
+    width: 80px;
+    height: 1px;
+    background: @text-base-color;
+  }
+
+  &__btn {
+    line-height: 18px;
+  }
+}
