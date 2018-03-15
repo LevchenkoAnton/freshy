@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Freshy</title>
     <link href="https://fonts.googleapis.com/css?family=Hind:400,700|Montserrat:200,300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="slick/slick.css">
+    <link rel="stylesheet" href="slick/slick-theme.css">
     <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -26,8 +28,8 @@
                     </div>
                 </div>
             </div><!--/row-->
-            <div class="row">
-                <div class="col">
+            <div class="row header__main">
+                <div class="col align-self-center">
                     <h1 class="header__title">ŚWIEŻE RYBY</h1>
                     <p class="header__description">Zobacz, co jeszcze oferujemy!</p>
                 </div>
@@ -38,7 +40,7 @@
     <section class="about">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6">
+                <div class="col-lg-5">
                     <h2 class="about__title">O NAS</h2>
                     <p class="about__text">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi molestie
@@ -55,7 +57,7 @@
                         NASZEJ FIRMY
                     </a>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-7">
                     <div class="about__sklep">
                         <img class="sklep__img" src="img/market.jpg" alt="Sklep">
                         <p class="sklep__title">NASZ SKLEP</p>
@@ -63,6 +65,58 @@
                 </div>
             </div><!--/row-->
         </div><!--/container-->
+    </section>
+
+    <section class="range">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-7">
+                    <h2 class="range__title">ASORTYMENT</h2>
+                    <p class="range__description">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Morbi molestie egestas massa, et sollicitudin urna mattis faucibus. Praesent sagittis
+                        laoreet est, et efficitur enim lacinia id. Aenean imperdiet diam nec efficitur commodo.
+                        Morbi at purus tempus tellus tempus placerat. Sed faucibus sed elit at lacinia.
+                    </p>
+                </div>
+            </div><!--/row-->
+            <div class="row slider">
+               <!-- <div class="col slider">-->
+                    <div class="col-3 slider__item slider__item--dorada">
+                        <h3 class="slider__title">DORADA ŚWIEŻA</h3>
+                        <p class="slider__price">14,99 ZŁ/KG</p>
+                        <button class="btn slider__btn" type="button">ZAMÓW</button>
+                    </div>
+                    <div class="col-3 slider__item slider__item--pstrag">
+                        <h3 class="slider__title">DORADA ŚWIEŻA</h3>
+                        <p class="slider__price">14,99 ZŁ/KG</p>
+                        <button class="btn slider__btn" type="button">ZAMÓW</button>
+                    </div>
+                    <div class="col-3 slider__item slider__item--shrimp">
+                        <h3 class="slider__title">DORADA ŚWIEŻA</h3>
+                        <p class="slider__price">14,99 ZŁ/KG</p>
+                        <button class="btn slider__btn" type="button">ZAMÓW</button>
+                    </div>
+                    <div class="col-3 slider__item slider__item--makrela">
+                        <h3 class="slider__title">DORADA ŚWIEŻA</h3>
+                        <p class="slider__price">14,99 ZŁ/KG</p>
+                        <button class="btn slider__btn" type="button">ZAMÓW</button>
+                    </div>
+                    <div class="col-3 slider__item slider__item--dorada">
+                        <h3 class="slider__title">DORADA ŚWIEŻA</h3>
+                        <p class="slider__price">14,99 ZŁ/KG</p>
+                        <button class="btn slider__btn" type="button">ZAMÓW</button>
+                    </div>
+            </div><!-- /row -->
+            <div class="row">
+                <div class="col">
+                    <a href="#" class="btn">
+                        ZOBACZ CAŁY<br>
+                        ASORTYMENT
+                    </a>
+                </div>
+            </div><!-- /row -->
+        </div>        
     </section>
 
     <section class="cooperation">
@@ -108,6 +162,7 @@
 
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="bootstrap/bootstrap.min.js"></script>
+    <script src="slick/slick.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>

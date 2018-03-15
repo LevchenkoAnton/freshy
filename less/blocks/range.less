@@ -1,0 +1,28 @@
+.range {
+  padding: 90px 0;
+  text-align: center;
+
+  &__title {
+    position: relative;
+    margin-bottom: 50px;
+    .title-base;
+    font-size: 34px;
+    color: @title-color;
+  }
+
+  &__title:after {
+    position: absolute;
+    content: '';
+    bottom: -25px;
+    left: 50%;
+    margin-left: -42px;
+    display: block;
+    width: 84px;
+    height: 1px;
+    background: @text-base-color;
+  }
+
+  &__description {
+    margin-bottom: 40px;
+  }
+}
