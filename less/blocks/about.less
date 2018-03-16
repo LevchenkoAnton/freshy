@@ -14,7 +14,7 @@
     content: '';
     bottom: -25px;
     display: block;
-    width: 85px;
+    width: 84px;
     height: 1px;
     background: @text-base-color;
   }
@@ -30,13 +30,13 @@
     line-height: 18px;
   }
 
-  &__sklep {
+  &__market {
     position: relative;
     text-align: right;
   }
 }
 
-.sklep {
+.market {
 
   &__img {
     width: 100%;
@@ -46,9 +46,47 @@
   &__title {
     position: absolute;
     bottom: 20px;
-    right: 35px;
+    right: 45px;
     .title-base;
     font-size: 22px;
-    color: @link-color;
+    color: @title-color;
+  }
+}
+
+@media (max-width: 992px) {
+  .about {
+    padding: 40px 0;
+    text-align: center;
+
+    &__title:after {
+      left: 50%;
+      margin-left: -42px;
+    }
+
+    &__btn {
+      margin-bottom: 20px;
+    }
+
+    &__market {
+      text-align: center;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .about {
+
+    &__title {
+      font-size: 26px;
+      margin-bottom: 30px;
+    }
+
+    &__title:after {
+      bottom: -15px;
+    }
+
+    &__phone {
+      font-size: 18px;
+    }
   }
 }

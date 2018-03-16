@@ -26,3 +26,29 @@
     margin-bottom: 40px;
   }
 }
+
+@media (max-width: 992px) {
+  .range {
+    padding: 40px 0;
+    text-align: center;
+
+    &__title:after {
+      left: 50%;
+      margin-left: -42px;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .range {
+
+    &__title {
+      font-size: 26px;
+      margin-bottom: 30px;
+    }
+
+    &__title:after {
+      bottom: -15px;
+    }
+  }
+}

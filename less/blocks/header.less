@@ -1,9 +1,10 @@
 .header {
+  position: relative;
+  padding-top: 40px;
+  text-align: center;
+  color: @text-color;
   background: @bg-base url("../img/main-bg.jpg") no-repeat center center;
   background-size: cover;
-  padding-top: 40px;
-  color: @link-color;
-  text-align: center;
 
   &__main {
     min-height: 520px;
@@ -18,5 +19,73 @@
   &__description {
     font-size: 22px;
     font-weight: 600;
+  }
+
+  &__open-nav {
+    position: absolute;
+    display: none;
+    right: 0;
+    bottom: 8px;
+    padding: 0;
+    margin: 0;
+    width: 60px;
+    height: 40px;
+    font-size: 0;
+    background-color: transparent;
+    border: none;
+  }
+
+  &__open-nav:before {
+    position: absolute;
+    content: '';
+    right: 10px;
+    top: 17px;
+    width: 23px;
+    height: 4px;
+    background: @text-color;
+
+    box-shadow: 0 4px 0 transparent,
+    0 8px 0 @text-color,
+    0 12px 0 transparent,
+    0 16px 0 @text-color;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    &__open-nav {
+      display: block;
+    }
+  }
+}
+
+
+@media (max-width: 782px) {
+  .header {
+
+    &__main {
+      min-height: 380px;
+    }
+
+    &__title {
+      font-size: 50px;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .header {
+
+    &__main {
+      min-height: 280px;
+    }
+
+    &__title {
+      font-size: 30px;
+    }
+
+    &__description {
+      font-size: 16px;
+    }
   }
 }

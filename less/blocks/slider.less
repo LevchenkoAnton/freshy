@@ -42,8 +42,14 @@
 
   &__btn {
     display: none;
+    margin: 0 auto;
     color: @title-color;
     background: @btn-bg;
+  }
+
+  &__btn:hover,
+  &__btn:active {
+    color: @title-color;
   }
 
   &__item:hover {
@@ -57,7 +63,7 @@
     }
 
     .slider__btn {
-      display: block;
+      display: inline-block;
     }
   }
 
@@ -65,7 +71,6 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
   }
 
   .slick-arrow {
@@ -91,12 +96,12 @@
     background-size: cover;
   }
 
-  .slick-next:before {
-    color: @bg-base;
-  }
-
   .slick-next {
     right: -20px;
+  }
+
+  .slick-next:before {
+    color: @bg-base;
   }
 
   .slick-next:before {
@@ -110,5 +115,26 @@
     background: url("../img/icons/next-icon.svg")no-repeat center center;
     background-size: cover;
   }
+}
+
+
+@media (max-width: 630px) {
+  .slider {
+
+    .slick-prev,
+    .slick-next {
+      z-index: 9;
+      background: @arrows-bg;
+    }
+
+    .slick-prev {
+      left: 15px;
+    }
+
+    .slick-next {
+      right: 15px;
+    }
+  }
+
 }
 

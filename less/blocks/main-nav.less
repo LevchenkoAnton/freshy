@@ -8,6 +8,40 @@
     padding: 0 10px;
     .title-base;
     line-height: 40px;
-    color: @link-color;
+    color: @text-color;
+  }
+
+  &__item:hover,
+  &__item:active {
+    color: @text-color;
+  }
+
+  &__item:hover {
+    border-bottom: 1px solid @text-color;
+    outline-offset: -10px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .main-nav {
+    flex-direction: column;
+    justify-content: center;
+    background: @bg-base;
+
+    &__item {
+      width: 100%;
+      border-top: 1px solid darken(@text-color, 10%);
+      border-bottom: 1px solid darken(@text-color, 60%);
+    }
+
+    &--closed {
+
+      .main-nav__item,
+      .main-nav__btn {
+        display: none;
+        position: absolute;
+      }
+    }
   }
 }

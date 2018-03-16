@@ -3,7 +3,32 @@
   vertical-align: middle;
   padding: 10px 15px;
   .title-base;
-  color: @link-color;
+  color: @text-color;
+  border: none;
   border-radius: 5px;
   background: @bg-base;
+}
+
+.btn:hover,
+.btn:active {
+  color: @text-color;
+}
+
+.btn:hover {
+  text-decoration: underline;
+}
+
+.btn-to-up {
+  display: inline-block;
+  vertical-align: middle;
+  float: right;
+  .title-base;
+  font-weight: 400;
+  color: @text-color;
+}
+
+.btn-to-up:hover,
+.btn-to-up:active {
+  cursor: pointer;
+  color: @text-color;
 }

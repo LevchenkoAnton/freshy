@@ -15,21 +15,22 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-3">
+                    <button class="header__open-nav">Открыть меню</button>
                     <a href="#" class="logo">SWIEZE<span class="logo--light">RYBY</span><span class="logo--extra-light">.COM</span></a>
                 </div>
                 <div class="col-lg-9">
-                    <div class="main-nav">
+                    <div class="main-nav main-nav--closed">
                         <a href="#" class="main-nav__item">HOME</a>
-                        <a href="#" class="main-nav__item">O NAS</a>
-                        <a href="#" class="main-nav__item">ASORTYMENT</a>
-                        <a href="#" class="main-nav__item">WSPÓŁPRACA</a>
-                        <a href="#" class="main-nav__item">KONTAKT</a>
-                        <a href="#" class="btn">TEL. 500 110 110</a>
+                        <a href="#about" class="main-nav__item">O NAS</a>
+                        <a href="#range" class="main-nav__item">ASORTYMENT</a>
+                        <a href="#cooperation" class="main-nav__item">WSPÓŁPRACA</a>
+                        <a href="#contact" class="main-nav__item">KONTAKT</a>
+                        <a href="#" class="btn main-nav__btn">TEL. 500 110 110</a>
                     </div>
                 </div>
             </div><!--/row-->
-            <div class="row header__main">
-                <div class="col align-self-center">
+            <div class="row align-items-center header__main">
+                <div class="col">
                     <h1 class="header__title">ŚWIEŻE RYBY</h1>
                     <p class="header__description">Zobacz, co jeszcze oferujemy!</p>
                 </div>
@@ -37,7 +38,7 @@
         </div><!--/container-->
     </header>
 
-    <section class="about">
+    <section class="about" id="about">
         <div class="container">
             <div class="row">
                 <div class="col-lg-5">
@@ -58,16 +59,16 @@
                     </a>
                 </div>
                 <div class="col-lg-7">
-                    <div class="about__sklep">
-                        <img class="sklep__img" src="img/market.jpg" alt="Sklep">
-                        <p class="sklep__title">NASZ SKLEP</p>
+                    <div class="about__market">
+                        <img class="market__img" src="img/market.jpg" alt="Sklep">
+                        <p class="market__title">NASZ SKLEP</p>
                     </div>
                 </div>
             </div><!--/row-->
         </div><!--/container-->
     </section>
 
-    <section class="range">
+    <section class="range" id="range">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-7">
@@ -82,27 +83,27 @@
             </div><!--/row-->
             <div class="row slider">
                <!-- <div class="col slider">-->
-                    <div class="col-3 slider__item slider__item--dorada">
+                    <div class="slider__item slider__item--dorada">
                         <h3 class="slider__title">DORADA ŚWIEŻA</h3>
                         <p class="slider__price">14,99 ZŁ/KG</p>
                         <button class="btn slider__btn" type="button">ZAMÓW</button>
                     </div>
-                    <div class="col-3 slider__item slider__item--pstrag">
+                    <div class="slider__item slider__item--pstrag">
                         <h3 class="slider__title">DORADA ŚWIEŻA</h3>
                         <p class="slider__price">14,99 ZŁ/KG</p>
                         <button class="btn slider__btn" type="button">ZAMÓW</button>
                     </div>
-                    <div class="col-3 slider__item slider__item--shrimp">
+                    <div class=" slider__item slider__item--shrimp">
                         <h3 class="slider__title">DORADA ŚWIEŻA</h3>
                         <p class="slider__price">14,99 ZŁ/KG</p>
                         <button class="btn slider__btn" type="button">ZAMÓW</button>
                     </div>
-                    <div class="col-3 slider__item slider__item--makrela">
+                    <div class="slider__item slider__item--makrela">
                         <h3 class="slider__title">DORADA ŚWIEŻA</h3>
                         <p class="slider__price">14,99 ZŁ/KG</p>
                         <button class="btn slider__btn" type="button">ZAMÓW</button>
                     </div>
-                    <div class="col-3 slider__item slider__item--dorada">
+                    <div class="slider__item slider__item--dorada">
                         <h3 class="slider__title">DORADA ŚWIEŻA</h3>
                         <p class="slider__price">14,99 ZŁ/KG</p>
                         <button class="btn slider__btn" type="button">ZAMÓW</button>
@@ -119,10 +120,10 @@
         </div>        
     </section>
 
-    <section class="cooperation">
+    <section class="cooperation" id="cooperation">
         <div class="container">
-            <div class="row justify-content-sm-center">
-                <div class="col-sm-6 col-lg-4   cooperation__item">
+            <div class="row justify-content-center">
+                <div class="col-sm-6 col-lg-4 cooperation__item">
                     <div class="cooperation__img cooperation__img--catering"></div>
                     <h3 class="cooperation__title">CATERING</h3>
                     <p class="cooperation__description">
@@ -130,7 +131,7 @@
                         sollicitudin urna mattis faucibus. Praesent sagittis laoreet est, et efficitur enim lacinia id.
                     </p>
                 </div>
-                <div class="col-sm-6 col-lg-4   cooperation__item">
+                <div class="col-sm-6 col-lg-4 cooperation__item">
                     <div class="cooperation__img cooperation__img--fish"></div>
                     <h3 class="cooperation__title">SPRZEDAŻ</h3>
                     <p class="cooperation__description">
@@ -138,7 +139,7 @@
                         sollicitudin urna mattis faucibus. Praesent sagittis laoreet est, et efficitur enim lacinia id.
                     </p>
                 </div>
-                <div class="col-sm-6 col-lg-4   cooperation__item">
+                <div class="col-sm-6 col-lg-4 cooperation__item">
                     <div class="cooperation__img cooperation__img--shrimp"></div>
                     <h3 class="cooperation__title">DOSTAWY</h3>
                     <p class="cooperation__description">
@@ -158,14 +159,10 @@
         </div><!--/container-->
     </section>
 
-    <section class="contact">
+    <section class="contact" id="contact">
         <div class="container">
             <div class="row">
-                <div class="col-md-6 map">
-                    <img class="map__img" src="img/map.png" alt="Map">
-                    <div class="map__action"></div>
-                </div>
-                <div class="col-md-6 contact__about">
+                <div class="col-lg-6 order-lg-11 contact__about">
                     <h2 class="contact__title">KONTAKT</h2>
                     <p class="contact__description">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi molestie egestas massa,
@@ -174,6 +171,77 @@
                         tempus placerat. Sed faucibus sed elit at lacinia.
                     </p>
                     <a href="#" class="btn contact__btn">KONTAKT</a>
+                </div>
+                <div class="col-lg-6 order-lg-1 map">
+                    <picture>
+                        <source media="(min-width: 992px)" srcset="img/map.png">
+                        <img class="map__img" src="img/map-mobile.jpg" alt="Map">
+                    </picture>
+                    <div class="map__action"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-lg-3">
+                    <h3 class="footer__title">O NAS</h3>
+                    <a href="#about" class="footer__link">O nas</a>
+                    <a href="#range" class="footer__link">Asortyment</a>
+                    <a href="#cooperation" class="footer__link">Współpraca</a>
+                    <a href="#contact" class="footer__link">Kontakt</a>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <h3 class="footer__title">WSPÓŁPRACA</h3>
+                    <a href="#" class="footer__link">Warunki współpracy</a>
+                    <a href="#" class="footer__link">Cennik</a>
+                    <a href="#" class="footer__link">Umowy</a>
+                    <a href="#" class="footer__link">Dostawy</a>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <h3 class="footer__title">WSPÓŁPRACA</h3>
+                    <p class="work__days">
+                        Pon. - Wt.
+                        <span class="work__hours"> 6:00 - 19:00</span>
+                    </p>
+                    <p class="work__days">
+                        Śr. - Pt.
+                        <span class="work__hours"> 6:00 - 19:00</span>
+                    </p>
+                    <p class="work__days">
+                        Sobota
+                        <span class="work__hours"> 6:00 - 16:00</span>
+                    </p>
+                    <p class="work__days">
+                        Niedziela i święta
+                        <span class="work__hours"> 7:00 - 14:00</span>
+                    </p>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <h3 class="footer__title">KONTAKT</h3>
+                    <p class="addresss">ul. Upalna 99</p>
+                    <p class="address">15-600 Białystok</p>
+                    <p class="tel">
+                        tel.
+                        <span class="tel__number"> 500 110 110</span>
+                    </p>
+                    <p class="email">
+                        e-mail
+                        <span class="email__address"> sklep@swiezeryby.com</span>
+                    </p>
+                </div>
+            </div>
+        </div><!--/row-->
+    </footer>
+
+    <section class="coppyright">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <p class="coppyright__text">Ⓒ SWIEZERYBY.COM 2016</p>
+                    <a class="btn-to-up">W GÓRĘ</a>
                 </div>
             </div>
         </div>

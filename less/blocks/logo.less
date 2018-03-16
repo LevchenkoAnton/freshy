@@ -1,9 +1,9 @@
 .logo {
-  display: block;
+  display: inline-block;
   .title-base;
   font-size: 25px;
   line-height: 40px;
-  color: @link-color;
+  color: @text-color;
 }
 
 .logo--light {
@@ -12,4 +12,13 @@
 
 .logo--extra-light {
   font-weight: 200;
+}
+
+.logo:hover,
+.logo:active {
+  color: @text-color;
+}
+
+.logo:hover {
+  border-bottom: 1px solid @text-color;
 }
