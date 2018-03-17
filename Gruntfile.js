@@ -19,10 +19,24 @@ module.exports = function(grunt) {
                 src: "css/style.css"
             }
         },
+
+        cssmin: {
+            target: {
+                files: [{
+                    expand: true,
+                    cwd: 'css',
+                    src: ['*.css', '!*.min.css'],
+                    dest: 'css',
+                    ext: '.min.css'
+                }]
+            }
+        },
+
         watch: {
             files: "less/**/*.less",
             tasks: ["less"]
         },
+
         browserSync: {
             dev: {
                 bsFiles: {
@@ -45,6 +59,7 @@ module.exports = function(grunt) {
     grunt.registerTask("build", [
         "less",
         "autoprefixer",
+        "cssmin",
         "browserSync",
         "watch"
     ]);

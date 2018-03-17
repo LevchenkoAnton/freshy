@@ -13,7 +13,7 @@ body {
   padding: 0;
   font-family: 'Hind', sans-serif;
   font-weight: 400;
-  line-height: 26px;
+  line-height: 21px;
   box-sizing: border-box;
   font-size: 14px;
   color: #737373;
@@ -31,6 +31,7 @@ a:hover {
   font-weight: 700;
   font-size: 25px;
   line-height: 40px;
+  letter-spacing: 1px;
   color: #fff;
 }
 .logo--light {
@@ -69,13 +70,18 @@ a:hover {
 }
 @media (max-width: 768px) {
   .main-nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
     flex-direction: column;
     justify-content: center;
     background: #00a1eb;
   }
   .main-nav__item {
     width: 100%;
-    border-top: 1px solid #e6e6e6;
+    border-top: 1px solid #b3b3b3;
     border-bottom: 1px solid #666666;
   }
   .main-nav--closed .main-nav__item,
@@ -90,6 +96,7 @@ a:hover {
   padding: 10px 15px;
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
+  font-size: 15px;
   color: #fff;
   border: none;
   border-radius: 5px;
@@ -109,6 +116,7 @@ a:hover {
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   font-weight: 400;
+  line-height: 40px;
   color: #fff;
 }
 .btn-to-up:hover,
@@ -118,7 +126,7 @@ a:hover {
 }
 .header {
   position: relative;
-  padding-top: 40px;
+  padding-top: 30px;
   text-align: center;
   color: #fff;
   background: #00a1eb url("../img/main-bg.jpg") no-repeat center center;
@@ -131,11 +139,13 @@ a:hover {
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   font-size: 79px;
+  letter-spacing: 12px;
   text-transform: uppercase;
 }
 .header__description {
   font-size: 22px;
   font-weight: 600;
+  letter-spacing: 4px;
 }
 .header__open-nav {
   position: absolute;
@@ -179,33 +189,39 @@ a:hover {
   }
   .header__title {
     font-size: 30px;
+    letter-spacing: 5px;
   }
   .header__description {
     font-size: 16px;
+    letter-spacing: 1px;
   }
 }
 .about {
-  padding: 90px 0;
+  padding: 125px 0 90px 0;
 }
 .about__title {
   position: relative;
-  margin-bottom: 50px;
+  margin-bottom: 46px;
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   font-size: 34px;
   color: #00a1eb;
+  text-transform: uppercase;
 }
 .about__title:after {
   position: absolute;
   content: '';
-  bottom: -25px;
+  bottom: -24px;
   display: block;
   width: 84px;
   height: 1px;
   background: #737373;
 }
+.about__text {
+  margin-bottom: 20px;
+}
 .about__phone {
-  margin-bottom: 25px;
+  margin-bottom: 35px;
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   font-size: 22px;
@@ -229,7 +245,7 @@ a:hover {
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   font-size: 22px;
-  color: #00a1eb;
+  color: #fff;
 }
 @media (max-width: 992px) {
   .about {
@@ -303,7 +319,7 @@ a:hover {
 }
 .cooperation__title {
   position: relative;
-  margin-bottom: 40px;
+  margin-bottom: 42px;
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   font-size: 24px;
@@ -313,7 +329,7 @@ a:hover {
 .cooperation__title:after {
   position: absolute;
   content: '';
-  bottom: -20px;
+  bottom: -21px;
   left: 50%;
   margin-left: -40px;
   display: block;
@@ -340,16 +356,17 @@ a:hover {
 }
 .range__title {
   position: relative;
-  margin-bottom: 50px;
+  margin-bottom: 46px;
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   font-size: 34px;
   color: #00a1eb;
+  text-transform: uppercase;
 }
 .range__title:after {
   position: absolute;
   content: '';
-  bottom: -25px;
+  bottom: -24px;
   left: 50%;
   margin-left: -42px;
   display: block;
@@ -358,7 +375,7 @@ a:hover {
   background: #737373;
 }
 .range__description {
-  margin-bottom: 40px;
+  margin-bottom: 45px;
 }
 @media (max-width: 992px) {
   .range {
@@ -381,7 +398,7 @@ a:hover {
 }
 .slider {
   padding: 0 20px;
-  margin-bottom: 40px;
+  margin-bottom: 55px;
 }
 .slider__item {
   min-height: 270px;
@@ -426,12 +443,6 @@ a:hover {
 .slider__btn:active {
   color: #00a1eb;
 }
-.slider__item:hover .slider__title {
-  margin-bottom: 24px;
-}
-.slider__item:hover .slider__price {
-  display: none;
-}
 .slider__item:hover .slider__btn {
   display: inline-block;
 }
@@ -446,8 +457,13 @@ a:hover {
   border-radius: 50%;
   border: 1px solid #00a1eb;
 }
+.slider .slick-prev,
+.slider .slick-next {
+  z-index: 9;
+  background: #fff;
+}
 .slider .slick-prev {
-  left: -20px;
+  left: -18px;
 }
 .slider .slick-prev:before {
   position: absolute;
@@ -461,7 +477,7 @@ a:hover {
   background-size: cover;
 }
 .slider .slick-next {
-  right: -20px;
+  right: -18px;
 }
 .slider .slick-next:before {
   color: #00a1eb;
@@ -478,11 +494,6 @@ a:hover {
   background-size: cover;
 }
 @media (max-width: 630px) {
-  .slider .slick-prev,
-  .slider .slick-next {
-    z-index: 9;
-    background: #fff;
-  }
   .slider .slick-prev {
     left: 15px;
   }
@@ -522,15 +533,16 @@ a:hover {
 }
 .contact__title {
   position: relative;
-  margin: 0 0 50px auto;
+  margin: 0 0 52px auto;
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   font-size: 34px;
+  text-transform: uppercase;
 }
 .contact__title:after {
   position: absolute;
   content: '';
-  bottom: -25px;
+  bottom: -26px;
   right: 0;
   display: block;
   width: 84px;
@@ -538,7 +550,7 @@ a:hover {
   background: #fff;
 }
 .contact__description {
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 .contact__btn {
   margin: 0;
@@ -559,7 +571,7 @@ a:hover {
   }
   .contact__title {
     margin: auto;
-    margin-bottom: 50px;
+    margin-bottom: 52px;
   }
   .contact__title:after {
     left: 50%;
@@ -577,51 +589,60 @@ a:hover {
   }
 }
 .footer {
-  padding: 50px 0;
+  padding: 55px 0 60px 0;
 }
 .footer__title {
   margin-bottom: 20px;
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   font-size: 22px;
+  text-transform: uppercase;
 }
 .footer__link {
   display: block;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   color: #737373;
 }
 .footer__link:hover,
 .footer__link:active {
   color: #737373;
 }
+.address,
+.email,
+.tel,
 .work__days {
+  margin-bottom: 5px;
+}
+.work__days,
+.email__address,
+.tel__number {
   font-weight: 700;
 }
 .work__hours {
   font-weight: 400;
 }
-.email__address {
-  font-weight: 700;
-}
-.tel__number {
-  font-weight: 700;
-}
 .coppyright {
   background: #000;
-  padding: 30px 0;
+  padding: 40px 0;
 }
 .coppyright__text {
   display: inline-block;
   vertical-align: middle;
   float: left;
+  margin: 0;
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   font-weight: 400;
+  line-height: 40px;
   color: #fff;
+  text-transform: uppercase;
 }
 @media (max-width: 992px) {
   .footer {
-    padding: 30px 0;
+    padding: 20px 0 30px 0;
+  }
+  .footer__title {
+    margin: 10px 0 5px 0;
   }
 }
 @media (max-width: 576px) {

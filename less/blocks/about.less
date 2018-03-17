@@ -1,26 +1,31 @@
 .about {
-  padding: 90px 0;
+  padding: 125px 0 90px 0;
 
   &__title {
     position: relative;
-    margin-bottom: 50px;
+    margin-bottom: 46px;
     .title-base;
     font-size: 34px;
     color: @title-color;
+    text-transform: uppercase;
   }
 
   &__title:after {
     position: absolute;
     content: '';
-    bottom: -25px;
+    bottom: -24px;
     display: block;
     width: 84px;
     height: 1px;
     background: @text-base-color;
   }
 
+  &__text {
+    margin-bottom: 20px;
+  }
+
   &__phone {
-    margin-bottom: 25px;
+    margin-bottom: 35px;
     .title-base;
     font-size: 22px;
     color: @title-color;
@@ -49,7 +54,7 @@
     right: 45px;
     .title-base;
     font-size: 22px;
-    color: @title-color;
+    color: @text-color;
   }
 }
 

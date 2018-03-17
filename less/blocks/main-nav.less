@@ -25,13 +25,18 @@
 @media (max-width: 768px) {
 
   .main-nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
     flex-direction: column;
     justify-content: center;
     background: @bg-base;
 
     &__item {
       width: 100%;
-      border-top: 1px solid darken(@text-color, 10%);
+      border-top: 1px solid darken(@text-color, 30%);
       border-bottom: 1px solid darken(@text-color, 60%);
     }
 

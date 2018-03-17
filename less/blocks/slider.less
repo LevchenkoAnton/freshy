@@ -1,6 +1,6 @@
 .slider {
   padding: 0 20px;
-  margin-bottom: 40px;
+  margin-bottom: 55px;
 
   &__item {
     min-height: 270px;
@@ -54,14 +54,6 @@
 
   &__item:hover {
 
-    .slider__title {
-      margin-bottom: 24px;
-    }
-
-    .slider__price {
-      display: none;
-    }
-
     .slider__btn {
       display: inline-block;
     }
@@ -80,8 +72,14 @@
     border: 1px solid @bg-base;
   }
 
+  .slick-prev,
+  .slick-next {
+    z-index: 9;
+    background: @arrows-bg;
+  }
+
   .slick-prev {
-    left: -20px;
+    left: -18px;
   }
 
   .slick-prev:before {
@@ -97,7 +95,7 @@
   }
 
   .slick-next {
-    right: -20px;
+    right: -18px;
   }
 
   .slick-next:before {
@@ -120,12 +118,6 @@
 
 @media (max-width: 630px) {
   .slider {
-
-    .slick-prev,
-    .slick-next {
-      z-index: 9;
-      background: @arrows-bg;
-    }
 
     .slick-prev {
       left: 15px;
