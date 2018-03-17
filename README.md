@@ -12,4 +12,4 @@
 * Время затраченное на проект: 3 дня
 
 > Ссылка на проект:
-https://levchenkoanton.github.io/frashy/
+https://levchenkoanton.github.io/freshy/
