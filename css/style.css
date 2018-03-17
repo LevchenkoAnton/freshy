@@ -613,6 +613,16 @@ a:hover {
 .work__days {
   margin-bottom: 5px;
 }
+.email__address,
+.tel__number {
+  color: #737373;
+}
+.email__address:hover,
+.tel__number:hover,
+.email__address:active,
+.tel__number:active {
+  color: #737373;
+}
 .work__days,
 .email__address,
 .tel__number {
