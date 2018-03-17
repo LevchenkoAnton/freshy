@@ -1,17 +1,17 @@
 /* fonts files */
 .title-base {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', Arial, sans-serif;
   font-weight: 700;
 }
 .text-base {
-  font-family: 'Hind', sans-serif;
+  font-family: 'Hind', Arial, sans-serif;
   font-weight: 400;
 }
 /*colors*/
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Hind', sans-serif;
+  font-family: 'Hind', Arial, sans-serif;
   font-weight: 400;
   line-height: 21px;
   box-sizing: border-box;
@@ -27,7 +27,7 @@ a:hover {
 }
 .logo {
   display: inline-block;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', Arial, sans-serif;
   font-weight: 700;
   font-size: 25px;
   line-height: 40px;
@@ -55,7 +55,7 @@ a:hover {
   display: inline-block;
   vertical-align: middle;
   padding: 0 10px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', Arial, sans-serif;
   font-weight: 700;
   line-height: 40px;
   color: #fff;
@@ -94,7 +94,7 @@ a:hover {
   display: inline-block;
   vertical-align: middle;
   padding: 10px 15px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', Arial, sans-serif;
   font-weight: 700;
   font-size: 15px;
   color: #fff;
@@ -113,7 +113,7 @@ a:hover {
   display: inline-block;
   vertical-align: middle;
   float: right;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', Arial, sans-serif;
   font-weight: 700;
   font-weight: 400;
   line-height: 40px;
@@ -136,7 +136,7 @@ a:hover {
   min-height: 520px;
 }
 .header__title {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', Arial, sans-serif;
   font-weight: 700;
   font-size: 79px;
   letter-spacing: 12px;
@@ -202,7 +202,7 @@ a:hover {
 .about__title {
   position: relative;
   margin-bottom: 46px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', Arial, sans-serif;
   font-weight: 700;
   font-size: 34px;
   color: #00a1eb;
@@ -222,7 +222,7 @@ a:hover {
 }
 .about__phone {
   margin-bottom: 35px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', Arial, sans-serif;
   font-weight: 700;
   font-size: 22px;
   color: #00a1eb;
@@ -242,7 +242,7 @@ a:hover {
   position: absolute;
   bottom: 20px;
   right: 45px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', Arial, sans-serif;
   font-weight: 700;
   font-size: 22px;
   color: #fff;
@@ -320,7 +320,7 @@ a:hover {
 .cooperation__title {
   position: relative;
   margin-bottom: 42px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', Arial, sans-serif;
   font-weight: 700;
   font-size: 24px;
   color: #00a1eb;
@@ -357,7 +357,7 @@ a:hover {
 .range__title {
   position: relative;
   margin-bottom: 46px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', Arial, sans-serif;
   font-weight: 700;
   font-size: 34px;
   color: #00a1eb;
@@ -423,12 +423,12 @@ a:hover {
 }
 .slider__title {
   display: block;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', Arial, sans-serif;
   font-weight: 700;
   font-size: 20px;
 }
 .slider__price {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', Arial, sans-serif;
   font-weight: 700;
   font-weight: 400;
   font-size: 24px;
@@ -534,7 +534,7 @@ a:hover {
 .contact__title {
   position: relative;
   margin: 0 0 52px auto;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', Arial, sans-serif;
   font-weight: 700;
   font-size: 34px;
   text-transform: uppercase;
@@ -593,7 +593,7 @@ a:hover {
 }
 .footer__title {
   margin-bottom: 20px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', Arial, sans-serif;
   font-weight: 700;
   font-size: 22px;
   text-transform: uppercase;
@@ -630,7 +630,7 @@ a:hover {
   vertical-align: middle;
   float: left;
   margin: 0;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', Arial, sans-serif;
   font-weight: 700;
   font-weight: 400;
   line-height: 40px;
